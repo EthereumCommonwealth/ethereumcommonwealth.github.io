@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Callisto || Officiality Checker</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="asset/stylesheet/semantic.min.css">
+    <link rel="stylesheet" href="asset/stylesheet/main.css">
+</head>
+
+<body>
+    <div class="ui stackable menu">
+        <div class="ui container">
+            <a class="header item">
+                    <i class="shield alternate icon"></i>
+               Callisto | <i> | Officiality Checker</i>
+  </a>
+            <div class="right menu">
+                <div class="item">
+                    <a class="ui mini primary button" href="https://github.com/redni/officiality.checker">
+              <i class="github icon"></i>
+            Source Code
+        </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ui container" style="margin-top:20px;">
+        <div class="ui equal width stackable grid">
+            <div class="center aligned  column">
+                <form class="ui form stacked raised segment">
+                    <div class="field">
+                        <label>Address</label>
+                        <input id="address" name="address" placeholder="https://callisto.network/" type="text">
+                    </div>
+                    <div class="ui primary submit button">Submit</div>
+                    <div class="ui error message"></div>
+                </form>
+
+            </div>
+            <div class="column">
+
+                <div class="ui stacked raised segment">
+                    <h3 class="ui header">
+  <i class="question circle icon"></i>
+  <div class="content">
+    Officiality Checker
+    <div class="sub header">Check if the page you visit belongs to Callisto</div>
+  </div>
+</h3>
+                    <p>Welcome to the Callisto check page. Here you can check if the page belongs to the official Callisto team. It is very simple, just enter the link and click "Check", the whole is done automatically and the result will be given below
+                        :)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="ui stacked raised segment">
+            <div id="loader" class="ui active inverted dimmer" style="display:none">
+                <div class="ui text loader">Checking the address...</div>
+            </div>
+            <div class="ui  info icon floating message ">
+                <i class="eye circle icon"></i>
+                <div class="content">
+                    <div class="header">
+                        Information about the result of the check will appear here.
+                    </div>
+                    <ul>
+                        <li> If a given page is <strong><span style="color:red;">not officially</span></strong> associated with Callisto message will change color to red and displays relevant information. </li>
+                        <li> If a given page is <strong><span style="color:green;">officially</span></strong> associated with Callisto, message will change color to green and display relevant information. </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ui success icon message" style="display:none;">
+                <i class="smile icon"></i>
+                <div class="content">
+                    <div class="header">
+                        The address is officially associated with Callisto!
+                    </div>
+                    <p>The address provided is correct and managed by the Callisto team. Feel free to use this site.</p>
+                </div>
+            </div>
+            <div class="ui negative icon message" style="display:none;">
+                <i class="frown icon"></i>
+                <div class="content">
+                    <div class="header">
+                        Attention! This address is not officially associated with Callisto!
+                    </div>
+                    <p>The address provided is not official and is not managed by the Callisto team. Be careful and do not use this site.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="asset/script/jquery.min.js"></script>
+    <script src="asset/script/semantic.min.js"></script>
+    <script src="asset/script/web3.min.js"></script>
+    <script src="asset/script/main.js"></script>
+</body>
+
+</html>
